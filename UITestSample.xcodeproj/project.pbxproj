@@ -16,6 +16,7 @@
 		019E43A0291012850023262B /* UITestSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019E439F291012850023262B /* UITestSampleTests.swift */; };
 		019E43AA291012850023262B /* UITestSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019E43A9291012850023262B /* UITestSampleUITests.swift */; };
 		019E43AC291012850023262B /* UITestSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019E43AB291012850023262B /* UITestSampleUITestsLaunchTests.swift */; };
+		019E43B929101D490023262B /* LoginValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019E43B829101D490023262B /* LoginValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		019E43A5291012850023262B /* UITestSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		019E43A9291012850023262B /* UITestSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSampleUITests.swift; sourceTree = "<group>"; };
 		019E43AB291012850023262B /* UITestSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		019E43B829101D490023262B /* LoginValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				019E4388291012830023262B /* AppDelegate.swift */,
 				019E438A291012830023262B /* SceneDelegate.swift */,
 				019E438C291012830023262B /* ViewController.swift */,
+				019E43B829101D490023262B /* LoginValidator.swift */,
 				019E438E291012830023262B /* Main.storyboard */,
 				019E4391291012850023262B /* Assets.xcassets */,
 				019E4393291012850023262B /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				019E438D291012830023262B /* ViewController.swift in Sources */,
 				019E4389291012830023262B /* AppDelegate.swift in Sources */,
+				019E43B929101D490023262B /* LoginValidator.swift in Sources */,
 				019E438B291012830023262B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
