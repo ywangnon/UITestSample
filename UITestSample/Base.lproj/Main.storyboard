@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UITestSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gUg-WY-8YW" userLabel="NameTF">
+                                <rect key="frame" x="40" y="164.66666666666666" width="310" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="emailTF"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RwZ-eE-b6P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="64Z-4h-zfI" userLabel="RepeatTF">
+                                <rect key="frame" x="40" y="324.66666666666669" width="310" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="repeaetPasswordTF"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LP8-JM-cT6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TR5-8B-cAY" userLabel="Signup Button">
+                                <rect key="frame" x="153" y="404.66666666666669" width="84" height="35"/>
+                                <accessibility key="accessibilityConfiguration" identifier="signupButton"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <action selector="tapSignupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XT4-Kp-2aF"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uun-I8-m9u" userLabel="PasswordTF">
+                                <rect key="frame" x="40" y="244.66666666666663" width="310" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="passwordTF"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eya-Yk-cEB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gUg-WY-8YW" secondAttribute="trailing" constant="40" id="0hd-Fh-chF"/>
+                            <constraint firstItem="TR5-8B-cAY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="21K-VS-PDC"/>
+                            <constraint firstItem="gUg-WY-8YW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9L0-hJ-MM2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="64Z-4h-zfI" secondAttribute="trailing" constant="40" id="H6e-Xj-Iow"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uun-I8-m9u" secondAttribute="trailing" constant="40" id="Hag-ll-m9y"/>
+                            <constraint firstItem="gUg-WY-8YW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="LYX-rJ-dyW"/>
+                            <constraint firstItem="64Z-4h-zfI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Uml-rt-ewk"/>
+                            <constraint firstItem="uun-I8-m9u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="c2T-iC-7CJ"/>
+                            <constraint firstItem="TR5-8B-cAY" firstAttribute="top" secondItem="64Z-4h-zfI" secondAttribute="bottom" constant="40" id="d0J-C3-S7Z"/>
+                            <constraint firstItem="uun-I8-m9u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="elS-1V-LFo"/>
+                            <constraint firstItem="TR5-8B-cAY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="euj-Kn-cmc"/>
+                            <constraint firstItem="uun-I8-m9u" firstAttribute="top" secondItem="gUg-WY-8YW" secondAttribute="bottom" constant="40" id="nFm-KW-OUo"/>
+                            <constraint firstItem="64Z-4h-zfI" firstAttribute="top" secondItem="uun-I8-m9u" secondAttribute="bottom" constant="40" id="ngP-SQ-D6B"/>
+                            <constraint firstItem="64Z-4h-zfI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="teZ-Zn-Tg3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="gUg-WY-8YW" id="Wne-RL-bgi"/>
+                        <outlet property="passwordTF" destination="uun-I8-m9u" id="CIA-oN-HzS"/>
+                        <outlet property="repeatTF" destination="64Z-4h-zfI" id="oCQ-pN-9nt"/>
+                        <outlet property="signupButton" destination="TR5-8B-cAY" id="UTk-F7-gd4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-77" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
